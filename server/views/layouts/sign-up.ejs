@@ -1,0 +1,76 @@
+<main class="main">
+    <div class="main-wrapper container">
+        <section class="main-signup">
+            <h1 class="main-signup-title">Регистрация</h1>
+            <form id="signUpForm" onsubmit="signUpForm" class="main-signup-form">
+                <ul class="signup-form-list">
+                    <li class="signup-form-item">
+                        <ul class="item-nested-list">
+                            <li class="nested-list-item">
+                                <input class="nested-item-input" name="first_name" required placeholder="Имя"
+                                    type="text">
+                            </li>
+                            <li class="nested-list-item">
+                                <input class="nested-item-input" name="last_name" required placeholder="Фамилия"
+                                    type="text">
+                            </li>
+                            <li class="nested-list-item">
+                                <input class="nested-item-input" name="interest" placeholder="Интересующее Вас место"
+                                    type="text">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="signup-form-item">
+                        <ul class="item-nested-list">
+                            <li class="list-item-phone">
+                                <select class="phone-select-code" name="phone_code" id="">
+                                    <option class="select-code-options" default>+380</option>
+                                </select>
+                                <input class="phone-fild" name="phone_number" type="number"
+                                    placeholder="введите номер телефона" required>
+                            </li>
+                            <li class="nested-list-item">
+                                <input class="nested-item-input" name="password" required placeholder="Введите пароль"
+                                    type="password">
+                            </li>
+                            <li class="nested-list-item">
+                                <input class="nested-item-input" name="passwordConfirm" required
+                                    placeholder="Подтвердить пароль" type="password">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="signup-form-confidentiality">
+                        <input class="form-confidentiality-checkbox" name="confidentiality" type="checkbox">
+                        <p class="form-confidentiality-description">Принимаю <a class="confidentiality-description-ref"
+                                href="#">Политику конфиденциальности</a> и
+                            <a class="confidentiality-description-ref" href="#">Условия использования</a></p>
+                    </li>
+                    <li class="signup-form-submit">
+                        <button class="form-submit-button" type="submit">ПОДТВЕРДИТЬ И ПОЛУЧИТЬ КОД В SMS</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <div class="main-additional">
+            <p class="main-additional-rules">Регистрируясь, Вы принимаете <a class="additional-rules-ref"
+                    href="#">Политику конфиденциальности</a> и <a class="additional-rules-ref" href="">Условия
+                    использования</a></p>
+            <p class="additional-login-link">Уже существует аккаунт ? <a href="#">Логин</a></p>
+            <button class="additional-trouble-signup" type="button">Проблема со входом?</button>
+        </div>
+        <div class="social-network-autorisation">
+            <p class="social-autorisation-description">или через соцсети</p>
+            <ul class="social-autorisation-list">
+                <li class="social-autorisation-item has-facebook">
+                    <a class="autorisation-item-ref" href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                </li>
+                <li class="social-autorisation-item has-instagram">
+                    <a class="autorisation-item-ref" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </li>
+                <li class="social-autorisation-item has-vk">
+                    <a class="autorisation-item-ref" href="#"><i class="fab fa-vk"></i> VK</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>

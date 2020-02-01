@@ -1,0 +1,49 @@
+{
+  "name": "viround",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/server/index.js",
+  "scripts": {
+    "start": "nodemon watch ./server/index.js",
+    "index": "nodemon index.js",
+    "build": "babel src --out-file index.js",
+    "watch": "babel dist --out-dir ./server --presets @babel/env  -w",
+    "dev": "concurrently \"npm run watch\" \"npm run start\""
+  },
+  "author": "Evgenii",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-ejs-js": "^0.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "nodemon": "^2.0.1",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.3",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "bson": "^4.0.3",
+    "concurrently": "^5.0.2",
+    "ejs": "^3.0.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb-stitch-browser-sdk": "^4.8.0",
+    "mongodb-stitch-server-sdk": "^4.8.0",
+    "morgan": "^1.9.1"
+  }
+}

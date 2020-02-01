@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://unpkg.com/ulid@v2/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/8.0.12/jsrsasign-all-min.js"></script>
+    <!-- <script src="https://unpkg.com/bro-fs"></script> -->
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+
+<body class="body">
+    <%- include('layouts/includes/header') %>
+    <!-- <main class="main" style="min-height: 500px;">
+        <div class="main-wrapper container">
+            <ul id='toDoList' class="main-task-list"></ul>
+        </div>
+    </main> -->
+
+    <%- body  %>
+    <%- include('layouts/includes/footer') %>
+</body>
+
+</html>

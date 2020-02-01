@@ -1,0 +1,297 @@
+/*Header*/
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    border: none;
+    background: linear-gradient(to right, #e9932d, #e5612f);
+    color: #fff;
+}
+
+.header:hover {
+    background: linear-gradient(to left, #e9932d, #e5612f);
+    color: #fff;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.header-logo {}
+
+.header-logo-ref {}
+
+.logo-ref-img {}
+
+.header-nav {}
+
+.header-nav-list {
+    display: flex;
+}
+
+.nav-item-leng {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item-leng:focus-within .item-leng-list {
+    transform: scaleY(1);
+}
+
+.item-leng-button {
+    color: #ffffff;
+}
+
+.item-leng-list {
+    position: absolute;
+
+    margin-top: 105px;
+
+    width: 100px;
+
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0px 9px 62px -27px rgb(0, 0, 0);
+
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: all 1s;
+}
+
+.leng-dropdown-item {}
+
+.leng-item-button {
+    display: block;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+.nav-item-link {
+    margin-left: 40px;
+}
+
+.item-rout-link {
+    color: #ffffff;
+}
+
+.item-rout-logout {
+    display: none;
+    color: white;
+    font-size: 14px;
+}
+
+/*hamburger menu*/
+.header-menu-wrapper {
+    display: none;
+}
+
+.header-menu-wrapper:hover .header-menu-list {
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all 2s cubic-bezier(0, 1.04, .27, 1.07);
+}
+
+.menu-hamburger-button {
+    color: #ffffff;
+}
+
+.header-menu-list {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    top: 74px;
+    left: 0;
+
+    width: 100%;
+    min-height: 50px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to right, #e9932d, #e5612f);
+
+    opacity: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 2s;
+}
+
+.menu-item-leng {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item-leng:hover .menu-leng-dropdown {
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 1s;
+}
+
+.menu-leng-button {
+    color: #ffffff;
+}
+
+.menu-leng-dropdown {
+    position: absolute;
+    margin-top: 32px;
+
+    width: max-content;
+
+    text-align: center;
+    background: linear-gradient(to right, #e9932d, #e5612f);
+
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: all 1s;
+}
+
+.menu-dropdown-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-dropdown-button {
+    padding: 5px 10px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.menu-dropdown-button:hover {
+    background: linear-gradient(to left, #e9932d, #e5612f);
+}
+
+.menu-item-rout {}
+
+.menu-rout-link {
+    color: white;
+}
+
+.rout-link-img {}
+
+/*end*/
+
+/*footer*/
+.footer {
+    margin-top: 150px;
+    padding: 15px 0 20px 0;
+    background-color: #2E2E2E;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-description {
+    margin-top: 10px;
+    color: #646464;
+}
+
+.footer-ref {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+
+/*index page*/
+.main-task-list {
+    /* background-color: red; */
+}
+
+.list-task-item {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.task-item-label {}
+
+.task-item-input {}
+
+.task-item-wrapper {
+    display: none;
+    align-items: center;
+
+    height: 100%;
+}
+
+.task-item-edit {
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 6px;
+    width: 50px;
+    background-color: green;
+}
+
+.task-item-delete {
+    margin-left: 30px;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 6px;
+    width: 50px;
+    background-color: red;
+}
+
+/*end*/

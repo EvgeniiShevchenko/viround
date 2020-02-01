@@ -1,0 +1,15 @@
+# root 
+/node_modules
+# data
+customerCollection.json
+# env setting
+.vscode
+.eslintignore
+.eslintrc.json
+*.config.js
+# compile directory
+/dist
+# other
+*.mp4
+*.rar
+/login-forms

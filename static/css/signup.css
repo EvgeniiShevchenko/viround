@@ -1,0 +1,221 @@
+.main-signup {}
+
+.main-signup-title {
+    text-align: center;
+}
+
+.main-signup-form {
+    margin-top: 40px;
+}
+
+.signup-form-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signup-form-item{
+    margin-left: 20px;
+    width: calc((100% - 20px) / 2);
+}
+
+.signup-form-list :first-child {
+    margin-left: 0;
+}
+
+.signup-form-submit {
+    margin-top: 20px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+
+.item-nested-list {}
+
+.item-nested-list :first-child {
+    margin-top: 0;
+}
+
+.nested-list-item {
+    padding: 6px 12px;
+    margin-top: 5px;
+
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.nested-item-input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.signup-form-confidentiality {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.list-item-phone {
+    padding: 6px 12px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.phone-select-code {
+    width: 15%;
+    outline: none;
+    border: none;
+}
+
+.select-code-options {}
+
+.phone-fild {
+    width: calc(85% - 5px);
+    outline: none;
+    border: none;
+}
+
+.form-confidentiality-checkbox {}
+
+.form-confidentiality-description {
+    display: inline-block;
+}
+
+.confidentiality-description-ref {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-submit-button {
+    padding: 13px 0;
+
+    width: 50%;
+
+    border-radius: 30px;
+    background: linear-gradient(to right, #e9932d, #e5612f);
+
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.form-submit-button:hover {
+    background: linear-gradient(to left, #e9932d, #e5612f);
+}
+
+.main-wrapper {
+
+    padding: 100px 15px 0 15px;
+}
+
+.main-additional {
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+.main-additional-rules {}
+
+.additional-rules-ref {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.additional-login-link {
+    margin-top: 10px;
+}
+
+.additional-trouble-signup {
+    margin-top: 10px;
+}
+
+.social-network-autorisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 30px;
+    margin: 0 auto;
+
+    width: 50%;
+}
+
+.social-autorisation-description {
+    margin-top: -5px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.social-autorisation-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.autorisation-list :first-child {
+    margin-left: 0;
+}
+
+.social-autorisation-item {
+    margin-left: 5px;
+    width: calc((100% - 10px) / 3);
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+}
+
+.has-facebook {
+    background-color: #3B5998;
+    transition: all 1s;
+}
+
+.has-facebook:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    transition: all 1s;
+}
+
+.has-facebook:hover .autorisation-item-ref {
+    color: #212529;
+}
+
+.has-instagram {
+    background-color: #CB2694;
+}
+
+.has-instagram:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    transition: all 1s;
+}
+
+.has-instagram:hover .autorisation-item-ref {
+    color: #212529;
+}
+
+.has-vk {
+    background-color: #4A76A8;
+}
+
+.has-vk:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    transition: all 1s;
+}
+
+.has-vk:hover .autorisation-item-ref {
+    color: #212529;
+}
+
+.autorisation-item-ref {
+    display: block;
+    padding: 10px 12px;
+
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+}
