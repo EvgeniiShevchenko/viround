@@ -202,4 +202,8 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('logOut').addEventListener('click', function(e) {
     logOut();
   });
+
+  function hello (){
+    
+  }
 });
