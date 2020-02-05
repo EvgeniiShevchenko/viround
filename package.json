@@ -1,16 +1,22 @@
 {
   "name": "viround",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express app",
   "main": "/server/index.js",
   "scripts": {
-    "start": "nodemon watch ./server/index.js",
+    "start": "node ./server/index.js",
     "index": "nodemon index.js",
     "build": "babel src --out-file index.js",
     "watch": "babel dist --out-dir ./server --presets @babel/env  -w",
-    "dev": "concurrently \"npm run watch\" \"npm run start\""
+    "dev": "concurrently \"npm run watch\" \"npm run dev:start\"",
+    "dev:start": "nodemon watch ./server/index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run start"
   },
-  "author": "Evgenii",
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
+  "author": "Evgenii Shevchenko",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
