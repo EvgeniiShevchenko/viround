@@ -140,70 +140,69 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  if (document.getElementById('toDoList')) {
+    document.getElementById('toDoList').addEventListener('click', function(e) {
+      const boble = e.path;
+      let listItem, list;
+      // e.stopPropagation();
+      // console.log(e);
+      // switch (e.target.id) {
+      //   case 'edit-btn':
+      //     break;
+      //   case 'delete-btn':
+      //     break;
 
-  document.getElementById('toDoList').addEventListener('click', function(e) {
-    const boble = e.path;
-    let listItem, list;
-    // e.stopPropagation();
-    // console.log(e);
-    // switch (e.target.id) {
-    //   case 'edit-btn':
-    //     break;
-    //   case 'delete-btn':
-    //     break;
-
-    //   default:
-    //     break;
-    // }
-    function deleteItem() {
-      list.removeChild(listItem);
-      console.log(list);
-    }
-
-    function editItem() {
-      if (e.target.innerText === 'edit') {
-        e.target.style.backgroundColor = 'blue';
-        e.target.style.color = 'white';
-        e.target.innerText = 'save';
-        listItem.setAttribute('contenteditable', 'true');
-      } else {
-        e.target.style.backgroundColor = 'green';
-        e.target.style.color = 'black';
-        e.target.innerText = 'edit';
-        listItem.setAttribute('contenteditable', 'false');
+      //   default:
+      //     break;
+      // }
+      function deleteItem() {
+        list.removeChild(listItem);
+        console.log(list);
       }
-    }
 
-    console.log(e);
-    for (const item of boble) {
-      if (item.nodeName === 'LI') {
-        listItem = item;
+      function editItem() {
+        if (e.target.innerText === 'edit') {
+          e.target.style.backgroundColor = 'blue';
+          e.target.style.color = 'white';
+          e.target.innerText = 'save';
+          listItem.setAttribute('contenteditable', 'true');
+        } else {
+          e.target.style.backgroundColor = 'green';
+          e.target.style.color = 'black';
+          e.target.innerText = 'edit';
+          listItem.setAttribute('contenteditable', 'false');
+        }
       }
-      if (item.nodeName === 'UL') {
-        list = item;
-      }
-      console.log(item.nodeName);
-    }
 
-    // console.log(e);
-    if (e.target.id === 'delete-btn') {
-      // alert("i'm working");
-      deleteItem();
-    }
-    if (e.target.id === 'edit-btn') {
-      // alert("i'm working");
-      editItem();
-    }
-    // if (e.currentTarget.NodeName === 'Button') {
-    // alert('hello');
-    // }
-  });
+      console.log(e);
+      for (const item of boble) {
+        if (item.nodeName === 'LI') {
+          listItem = item;
+        }
+        if (item.nodeName === 'UL') {
+          list = item;
+        }
+        console.log(item.nodeName);
+      }
+
+      // console.log(e);
+      if (e.target.id === 'delete-btn') {
+        // alert("i'm working");
+        deleteItem();
+      }
+      if (e.target.id === 'edit-btn') {
+        // alert("i'm working");
+        editItem();
+      }
+      // if (e.currentTarget.NodeName === 'Button') {
+      // alert('hello');
+      // }
+    });
+  }
 
   document.getElementById('logOut').addEventListener('click', function(e) {
     logOut();
   });
 
-  function hello (){
-    
-  }
+  function hello() {}
 });
