@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
           e.target.elements[i].value = '';
         }
 
-        const loginRequest = await axios.post('http://localhost:3000/api/login', { ...submitData });
+        const loginRequest = await axios.post('/api/login', { ...submitData });
         if (loginRequest.data.error === false) {
           localStorage.setItem('jwtToken', loginRequest.data.token);
 
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         newCustomers = { ...newCustomers, ...customer };
 
-        const addCustomer = await axios.post('http://localhost:3000/api/sign-up', { data: newCustomers });
+        const addCustomer = await axios.post('/api/sign-up', { data: newCustomers });
 
         console.log(addCustomer.data);
       } catch (e) {
