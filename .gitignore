@@ -12,4 +12,5 @@ customerCollection.json
 # other
 *.mp4
 *.rar
+*.psd
 /login-forms
