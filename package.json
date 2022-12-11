@@ -45,7 +45,7 @@
     "concurrently": "^5.0.2",
     "ejs": "^3.0.1",
     "ejs-locals": "^1.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb-stitch-browser-sdk": "^4.8.0",
